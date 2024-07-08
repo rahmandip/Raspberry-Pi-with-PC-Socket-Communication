@@ -22,14 +22,16 @@ Jumper wires
 Installing the Adafruit_CircuitPython_DHT Library:
 **pip install adafruit-circuitpython-dht**
 
-If you get error on Raspi like 
-Traceback (most recent call last):
+If you get error on Raspi like:
+
+**Traceback (most recent call last):
   File "/home/abdur/Desktop/Python/dht_to_pc.py", line 144, in <module>
     read_sensor()
   File "/home/abdur/Desktop/Python/dht_to_pc.py", line 141, in read_sensor
     raise error
   File "/home/abdur/Desktop/Python/dht_to_pc.py", line 136, in read_sensor
     print(f"Temperature: {temperature_c:.1f}ï¿½C, Humidity: {humidity:.1f}%")
-TypeError: unsupported format string passed to NoneType.__format__
+TypeError: unsupported format string passed to NoneType.__format__**
 
 Then run the code again.
+Otherwise choose the port no manually in **RPIsocket.bind((myIP, xxxx))  # Bind to any available port** this part of the code
