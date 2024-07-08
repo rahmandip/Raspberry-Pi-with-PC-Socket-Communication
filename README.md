@@ -19,5 +19,5 @@ DHT11 or DHT22 temperature and humidity sensor
 Breadboard
 Jumper wires
 
-Installing the Adafruit_CircuitPython_DHT Library
+Installing the Adafruit_CircuitPython_DHT Library:
 **pip install adafruit-circuitpython-dht**
