@@ -1,6 +1,6 @@
 import socket
 
-serverIP = '192.168.xx.xx' # Manually input the IP Address
+serverIP = '192.168.xx.xx' # Manually input the IP Address of PI
 serverPort = int(input("Enter the server port number: "))  # Manually input the port number
 bufferSize = 1024
 
