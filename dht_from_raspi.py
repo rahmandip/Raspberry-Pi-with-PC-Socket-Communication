@@ -1,6 +1,6 @@
 import socket
 
-serverAddress = ('192.168.31.27', 2222)
+serverAddress = ('192.168.xx.xx', 2222)
 bufferSize = 1024
 
 UDPClientSocket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
