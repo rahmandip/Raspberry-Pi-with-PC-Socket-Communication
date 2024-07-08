@@ -1,18 +1,17 @@
 import socket
 
-serverAddress = ('192.168.xx.xx', 2222)
+serverIP = '192.168.xx.xx' # Manually input the IP Address
+serverPort = int(input("Enter the server port number: "))  # Manually input the port number
 bufferSize = 1024
 
 UDPClientSocket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
-if __name__ == '__main__':
-    print("Client is running")
 
 while True:
     cmd = input("Enter command (TEMP/HUM): ").upper()
     if cmd in ['TEMP', 'HUM']:
         cmd = cmd.encode('utf-8')
-        UDPClientSocket.sendto(cmd, serverAddress)
+        UDPClientSocket.sendto(cmd, (serverIP, serverPort))
         data, address = UDPClientSocket.recvfrom(bufferSize)
         data = data.decode('utf-8')
         print("Data from Server:", data)
@@ -20,3 +19,8 @@ while True:
         print("Server's Port:", address[1])
     else:
         print("Invalid command, please enter TEMP or HUM.")
+
+
+if __name__ == '__main__':
+    print("Client is running")
+
