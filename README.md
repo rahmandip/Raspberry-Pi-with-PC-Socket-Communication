@@ -17,9 +17,13 @@ DHT22 DATASHEET: https://cdn-shop.adafruit.com/datasheets/Digital+humidity+and+t
 Here’s a list of parts you need to build the circuit (if you don’t have a DHT breakout board, you need a 4.7kOhm resistor):
 
 Raspberry Pi board 
+
 DHT11 or DHT22 temperature and humidity sensor
+
 4.7k Ohm resistor or similar value (not needed if you have a DHT breakout board) This is called pull up resistor
+
 Breadboard
+
 Jumper wires
 
 Installing the Adafruit_CircuitPython_DHT Library:
