@@ -20,4 +20,4 @@ Breadboard
 Jumper wires
 
 Installing the Adafruit_CircuitPython_DHT Library
-<pip install adafruit-circuitpython-dht>
+**pip install adafruit-circuitpython-dht**
