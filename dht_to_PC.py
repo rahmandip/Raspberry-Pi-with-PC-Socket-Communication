@@ -9,7 +9,7 @@ sensor = adafruit_dht.DHT11(board.D4) # DHT11 sensor connected to GPIO 4 Type DH
 # Socket setup
 bufferSize = 1024
 ServerPort = 2222
-myIP = '192.168.31.27'
+myIP = '192.168.xx.xx' #Give the server IP
 
 RPIsocket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 RPIsocket.bind((myIP, ServerPort))
